@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1585480699 source:c:\users\user\desktop\camera\codeblocks\lab1\hsh.cpp
+	"heading.h"
+
+1585480603 c:\users\user\desktop\camera\codeblocks\lab1\heading.h
+	<iostream>
+	<cstring>
+
+1585480503 source:c:\users\user\desktop\camera\codeblocks\lab1\main.cpp
+	"heading.h"
+
