@@ -8,11 +8,10 @@ setModel (Model);
 int len = strlen("notebook");
 this -> Model = new char [len]+1;
 strcpy(this -> Model, Model);
-len = strlen("author");
+len = strlen("CPU");
 this -> CPU = new char [len]+1;
 strcpy (this -> CPU, CPU);
-Memory = 0;
-setMemory(Memory);
+this->Memory=Memory;
 };
 NoteBook::NoteBook(NoteBook &a): NoteBook(a.Model, a.CPU, a.Memory){}
 void NoteBook :: print(){
@@ -30,15 +29,14 @@ delete[]CPU;
 void NoteBook:: setModel(char * Model){
 
 delete [] this -> Model;
-int len = strlen("notebook");
+int len = strlen(Model)+1;
 this-> Model = new char[len];
 strcpy (this -> Model, Model);
 }
 
 void NoteBook:: setCPU(char * CPU){
-
 delete [] this -> CPU;
-int len = strlen("CPU")+1;
+int len = strlen(CPU)+1;
 this-> CPU = new char[len];
 strcpy (this -> CPU, CPU);
 }
